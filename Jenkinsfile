@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Sumukha47/spring-petclinic.git'
             }
         }
-        stage('build') {
+        stage('generate a build') {
             steps {
                 sh 'mvn package'
             }
